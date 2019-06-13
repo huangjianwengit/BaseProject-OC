@@ -36,5 +36,10 @@
 + (CGFloat)screenWidth {
     return [UIScreen mainScreen].bounds.size.width;
 }
-
++ (CGFloat)screenHeightScale {
+    return [UIScreen mainScreen].bounds.size.height/667.00;
+}
++ (CGFloat)screenWidthScale {
+    return [UIScreen mainScreen].bounds.size.width/375.00;
+}
 @end

@@ -16,6 +16,9 @@
 		9523ED1622631B5E00253DA5 /* XYWKTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9523ED0C22631B5D00253DA5 /* XYWKTool.m */; };
 		9523ED1722631B5E00253DA5 /* XYWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9523ED0E22631B5D00253DA5 /* XYWKWebView.m */; };
 		9523ED1822631B5E00253DA5 /* XYWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9523ED1022631B5D00253DA5 /* XYWKWebViewController.m */; };
+		9541BEB822B1DE46000E8720 /* MMPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEB722B1DE46000E8720 /* MMPayManager.m */; };
+		9541BEBD22B1DE71000E8720 /* AliPayAndWeChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEBA22B1DE71000E8720 /* AliPayAndWeChatService.m */; };
+		9541BEBE22B1DE71000E8720 /* MMJPushService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEBB22B1DE71000E8720 /* MMJPushService.m */; };
 		95F8C0322262FFEC005382DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F8C0312262FFEC005382DD /* Assets.xcassets */; };
 		95F8C0382262FFEC005382DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C0372262FFEC005382DD /* main.m */; };
 		95F8C0422262FFEC005382DD /* BaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C0412262FFEC005382DD /* BaseProjectTests.m */; };
@@ -91,6 +94,12 @@
 		9523ED0F22631B5D00253DA5 /* XYWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWKWebViewController.h; sourceTree = "<group>"; };
 		9523ED1022631B5D00253DA5 /* XYWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWKWebViewController.m; sourceTree = "<group>"; };
 		9523ED1922631C3000253DA5 /* Vendors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vendors.h; sourceTree = "<group>"; };
+		9541BEB622B1DE46000E8720 /* MMPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPayManager.h; sourceTree = "<group>"; };
+		9541BEB722B1DE46000E8720 /* MMPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPayManager.m; sourceTree = "<group>"; };
+		9541BEB922B1DE71000E8720 /* MMJPushService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMJPushService.h; sourceTree = "<group>"; };
+		9541BEBA22B1DE71000E8720 /* AliPayAndWeChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayAndWeChatService.m; sourceTree = "<group>"; };
+		9541BEBB22B1DE71000E8720 /* MMJPushService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMJPushService.m; sourceTree = "<group>"; };
+		9541BEBC22B1DE71000E8720 /* AliPayAndWeChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayAndWeChatService.h; sourceTree = "<group>"; };
 		95F8C0252262FFEB005382DD /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F8C0312262FFEC005382DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F8C0362262FFEC005382DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -216,10 +225,10 @@
 		9523ECFC22631B3100253DA5 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				9523ED1922631C3000253DA5 /* Vendors.h */,
 				9523ECFD22631B5D00253DA5 /* MBProgressHUD */,
 				9523ED0122631B5D00253DA5 /* TableViewAnimationKit */,
 				9523ED0822631B5D00253DA5 /* XYWKWebView */,
-				9523ED1922631C3000253DA5 /* Vendors.h */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -260,6 +269,15 @@
 				9523ED1022631B5D00253DA5 /* XYWKWebViewController.m */,
 			);
 			path = XYWKWebView;
+			sourceTree = "<group>";
+		};
+		9541BEB522B1DE46000E8720 /* MMPayManager */ = {
+			isa = PBXGroup;
+			children = (
+				9541BEB622B1DE46000E8720 /* MMPayManager.h */,
+				9541BEB722B1DE46000E8720 /* MMPayManager.m */,
+			);
+			path = MMPayManager;
 			sourceTree = "<group>";
 		};
 		95F8C01C2262FFEB005382DD = {
@@ -350,6 +368,10 @@
 		95F8C0992263052C005382DD /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9541BEBC22B1DE71000E8720 /* AliPayAndWeChatService.h */,
+				9541BEBA22B1DE71000E8720 /* AliPayAndWeChatService.m */,
+				9541BEB922B1DE71000E8720 /* MMJPushService.h */,
+				9541BEBB22B1DE71000E8720 /* MMJPushService.m */,
 				95F8C09A2263052C005382DD /* MakeKeyWindowService.h */,
 				95F8C09B2263052C005382DD /* MakeKeyWindowService.m */,
 			);
@@ -497,6 +519,7 @@
 		95F8C0E322631108005382DD /* ToolModules */ = {
 			isa = PBXGroup;
 			children = (
+				9541BEB522B1DE46000E8720 /* MMPayManager */,
 				9523ECFB2263176400253DA5 /* Tool.h */,
 				95F8C0F222631171005382DD /* MMAlert */,
 				95F8C0E722631170005382DD /* PPNetWorkHelper */,
@@ -720,11 +743,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject-resources.sh",
+				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
@@ -840,6 +865,7 @@
 				95F8C0FA22631171005382DD /* MMAlert.m in Sources */,
 				9523ED1822631B5E00253DA5 /* XYWKWebViewController.m in Sources */,
 				95F8C08D226301C9005382DD /* JHBaseNavigationController.m in Sources */,
+				9541BEBE22B1DE71000E8720 /* MMJPushService.m in Sources */,
 				95F8C0DE22630F1C005382DD /* JHFrameTool.m in Sources */,
 				95F8C08A226301A0005382DD /* JHBaseViewController.m in Sources */,
 				95F8C0D522630D48005382DD /* UIView+Frame.m in Sources */,
@@ -854,6 +880,8 @@
 				95F8C0E122630F4C005382DD /* JHSystemTool.m in Sources */,
 				9523ED1622631B5E00253DA5 /* XYWKTool.m in Sources */,
 				95F8C0D222630D48005382DD /* UIControl+Add.m in Sources */,
+				9541BEB822B1DE46000E8720 /* MMPayManager.m in Sources */,
+				9541BEBD22B1DE71000E8720 /* AliPayAndWeChatService.m in Sources */,
 				95F8C0A02263052C005382DD /* SOAComponentAppDelegate.m in Sources */,
 				95F8C090226301E0005382DD /* JHBaseTabBarController.m in Sources */,
 				9523ED1522631B5E00253DA5 /* XYScriptMessage.m in Sources */,
@@ -1024,10 +1052,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1043,10 +1068,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1060,11 +1082,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1079,11 +1097,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1097,11 +1111,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1115,11 +1125,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

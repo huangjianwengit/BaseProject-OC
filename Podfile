@@ -14,7 +14,11 @@ target 'BaseProject' do
     pod 'Masonry', '~> 1.0.2'
     pod 'YYCache', '~> 1.0.4'
     pod 'IQKeyboardManager', '~> 6.2.0'
-
+    #支付SDK
+    pod 'AlipaySDK-iOS'
+    pod 'WechatOpenSDK'
+    #推送
+    pod 'JPush'
   target 'BaseProjectTests' do
     inherit! :search_paths
     # Pods for testing

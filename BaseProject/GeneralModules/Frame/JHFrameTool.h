@@ -25,13 +25,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 导航栏高度 */
 + (CGFloat)navigationBarHeight;
-/** 屏幕宽度 */
-+ (CGFloat)screenWidth;
-/** 屏幕高度 */
-+ (CGFloat)screenHeight;
 
 /**导航栏和状态栏高度*/
 + (CGFloat)navigationBarAndstatusBarHeight;
+
+/** 屏幕宽度 */
++ (CGFloat)screenWidth;
+
+/** 屏幕高度 */
++ (CGFloat)screenHeight;
+
+/** 屏幕高度比 */
++ (CGFloat)screenHeightScale;
+
+/** 屏幕宽度比 */
++ (CGFloat)screenWidthScale;
+
 @end
 
 NS_ASSUME_NONNULL_END
+
