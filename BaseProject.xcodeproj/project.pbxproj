@@ -20,6 +20,7 @@
 		9541BEBD22B1DE71000E8720 /* AliPayAndWeChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEBA22B1DE71000E8720 /* AliPayAndWeChatService.m */; };
 		9541BEBE22B1DE71000E8720 /* MMJPushService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEBB22B1DE71000E8720 /* MMJPushService.m */; };
 		9541BEC222B1EECC000E8720 /* JHAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEC122B1EECC000E8720 /* JHAudioTool.m */; };
+		9541BEC622B1F121000E8720 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEC522B1F121000E8720 /* CountDown.m */; };
 		95F8C0322262FFEC005382DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F8C0312262FFEC005382DD /* Assets.xcassets */; };
 		95F8C0382262FFEC005382DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C0372262FFEC005382DD /* main.m */; };
 		95F8C0422262FFEC005382DD /* BaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C0412262FFEC005382DD /* BaseProjectTests.m */; };
@@ -103,6 +104,8 @@
 		9541BEBC22B1DE71000E8720 /* AliPayAndWeChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayAndWeChatService.h; sourceTree = "<group>"; };
 		9541BEC022B1EECC000E8720 /* JHAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAudioTool.h; sourceTree = "<group>"; };
 		9541BEC122B1EECC000E8720 /* JHAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAudioTool.m; sourceTree = "<group>"; };
+		9541BEC422B1F121000E8720 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
+		9541BEC522B1F121000E8720 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
 		95F8C0252262FFEB005382DD /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F8C0312262FFEC005382DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F8C0362262FFEC005382DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,6 +293,15 @@
 				9541BEC122B1EECC000E8720 /* JHAudioTool.m */,
 			);
 			path = JHAudioTool;
+			sourceTree = "<group>";
+		};
+		9541BEC322B1F121000E8720 /* CounDown */ = {
+			isa = PBXGroup;
+			children = (
+				9541BEC422B1F121000E8720 /* CountDown.h */,
+				9541BEC522B1F121000E8720 /* CountDown.m */,
+			);
+			path = CounDown;
 			sourceTree = "<group>";
 		};
 		95F8C01C2262FFEB005382DD = {
@@ -532,6 +544,7 @@
 			isa = PBXGroup;
 			children = (
 				9523ECFB2263176400253DA5 /* Tool.h */,
+				9541BEC322B1F121000E8720 /* CounDown */,
 				9541BEBF22B1EEA0000E8720 /* JHAudioTool */,
 				9541BEB522B1DE46000E8720 /* MMPayManager */,
 				95F8C0F222631171005382DD /* MMAlert */,
@@ -899,6 +912,7 @@
 				95F8C0A02263052C005382DD /* SOAComponentAppDelegate.m in Sources */,
 				95F8C090226301E0005382DD /* JHBaseTabBarController.m in Sources */,
 				9523ED1522631B5E00253DA5 /* XYScriptMessage.m in Sources */,
+				9541BEC622B1F121000E8720 /* CountDown.m in Sources */,
 				95F8C0D722630D48005382DD /* UIView+ParentController.m in Sources */,
 				9523ED1122631B5E00253DA5 /* MBProgressHUD+MJ.m in Sources */,
 				9523ED1322631B5E00253DA5 /* TableViewAnimationKit.m in Sources */,
