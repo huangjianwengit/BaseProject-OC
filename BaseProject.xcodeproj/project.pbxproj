@@ -19,6 +19,7 @@
 		9541BEB822B1DE46000E8720 /* MMPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEB722B1DE46000E8720 /* MMPayManager.m */; };
 		9541BEBD22B1DE71000E8720 /* AliPayAndWeChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEBA22B1DE71000E8720 /* AliPayAndWeChatService.m */; };
 		9541BEBE22B1DE71000E8720 /* MMJPushService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEBB22B1DE71000E8720 /* MMJPushService.m */; };
+		9541BEC222B1EECC000E8720 /* JHAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541BEC122B1EECC000E8720 /* JHAudioTool.m */; };
 		95F8C0322262FFEC005382DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F8C0312262FFEC005382DD /* Assets.xcassets */; };
 		95F8C0382262FFEC005382DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C0372262FFEC005382DD /* main.m */; };
 		95F8C0422262FFEC005382DD /* BaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C0412262FFEC005382DD /* BaseProjectTests.m */; };
@@ -100,6 +101,8 @@
 		9541BEBA22B1DE71000E8720 /* AliPayAndWeChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayAndWeChatService.m; sourceTree = "<group>"; };
 		9541BEBB22B1DE71000E8720 /* MMJPushService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMJPushService.m; sourceTree = "<group>"; };
 		9541BEBC22B1DE71000E8720 /* AliPayAndWeChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayAndWeChatService.h; sourceTree = "<group>"; };
+		9541BEC022B1EECC000E8720 /* JHAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAudioTool.h; sourceTree = "<group>"; };
+		9541BEC122B1EECC000E8720 /* JHAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAudioTool.m; sourceTree = "<group>"; };
 		95F8C0252262FFEB005382DD /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F8C0312262FFEC005382DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F8C0362262FFEC005382DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -278,6 +281,15 @@
 				9541BEB722B1DE46000E8720 /* MMPayManager.m */,
 			);
 			path = MMPayManager;
+			sourceTree = "<group>";
+		};
+		9541BEBF22B1EEA0000E8720 /* JHAudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				9541BEC022B1EECC000E8720 /* JHAudioTool.h */,
+				9541BEC122B1EECC000E8720 /* JHAudioTool.m */,
+			);
+			path = JHAudioTool;
 			sourceTree = "<group>";
 		};
 		95F8C01C2262FFEB005382DD = {
@@ -519,8 +531,9 @@
 		95F8C0E322631108005382DD /* ToolModules */ = {
 			isa = PBXGroup;
 			children = (
-				9541BEB522B1DE46000E8720 /* MMPayManager */,
 				9523ECFB2263176400253DA5 /* Tool.h */,
+				9541BEBF22B1EEA0000E8720 /* JHAudioTool */,
+				9541BEB522B1DE46000E8720 /* MMPayManager */,
 				95F8C0F222631171005382DD /* MMAlert */,
 				95F8C0E722631170005382DD /* PPNetWorkHelper */,
 			);
@@ -875,6 +888,7 @@
 				95F8C09F2263052C005382DD /* MakeKeyWindowService.m in Sources */,
 				95F8C0F722631171005382DD /* MMNetworkConst.m in Sources */,
 				9523ED1722631B5E00253DA5 /* XYWKWebView.m in Sources */,
+				9541BEC222B1EECC000E8720 /* JHAudioTool.m in Sources */,
 				95F8C0F922631171005382DD /* PPNetworkHelper.m in Sources */,
 				95F8C0D622630D48005382DD /* UIView+HGCorner.m in Sources */,
 				95F8C0E122630F4C005382DD /* JHSystemTool.m in Sources */,
@@ -1052,7 +1066,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1068,7 +1085,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1082,7 +1102,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1097,7 +1121,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1111,7 +1139,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1125,7 +1157,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.webappcloud.BaseProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
