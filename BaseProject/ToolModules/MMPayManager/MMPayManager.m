@@ -108,7 +108,7 @@ static id _instance;
     NSString *timestamp = dic[@"timestamp"];
     NSString *sign = dic[@"sign"];
     
-    [WXApi registerApp:appid];
+    [WXApi registerApp:appid universalLink:@""];
     
     if(![WXApi isWXAppInstalled]) {
         failBlock(WXERROR_NOTINSTALL);
@@ -133,7 +133,7 @@ static id _instance;
     req.package   = package;
     //签名
     req.sign      = sign;
-    [WXApi sendReq:req];
+    [WXApi sendReq:req completion:nil];
     
     //日志输出
     NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",appid,req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );
@@ -198,7 +198,7 @@ static id _instance;
     req.scope = @"snsapi_userinfo";
     req.state = @"login";
     //第三方向微信终端发送一个SendAuthReq消息结构
-    [WXApi sendReq:req];
+    [WXApi sendReq:req completion:nil];
 }
 #pragma mark 支付宝支付
 - (void)aliPayWithPayParam:(NSString *)pay_param

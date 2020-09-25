@@ -24,12 +24,9 @@
 //添加子控制器
 - (void)addChildViewControllers{
     //图片大小建议32*32
-    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"首页" andImageName:@"tab1"];
-    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"优选" andImageName:@"tab2"];
-    //中间这个不设置东西，只占位
-    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"发红包" andImageName:@"tabbar_add"];
-    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"商城" andImageName:@"tab3"];
-    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"个人中心" andImageName:@"tab4"];
+    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"资讯" andImageName:@"information"];
+    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"社区" andImageName:@"community"];
+    [self addChildrenViewController:[[JHBaseViewController alloc] init] andTitle:@"我的" andImageName:@"personal"];
 }
 
 - (void)addChildrenViewController:(UIViewController *)childVC andTitle:(NSString *)title andImageName:(NSString *)imageName{

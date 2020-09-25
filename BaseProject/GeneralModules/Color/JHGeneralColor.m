@@ -11,7 +11,7 @@
 @implementation JHGeneralColor
 
 + (UIColor *)themeColor {
-    return [UIColor colorWithHexString:@"#EE1B2B"];
+    return [UIColor colorWithHexString:@"#FAAF3B"];
 }
 + (UIColor *)themeBackgroundColor
 {

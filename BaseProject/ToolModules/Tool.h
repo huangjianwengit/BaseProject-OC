@@ -10,6 +10,6 @@
 #define Tool_h
 
 #import "MMAlert.h"
-#import "MMHTTPRequest.h"
+#import "QHHTTPRequest.h"
 
 #endif /* Tool_h */
